@@ -73,17 +73,13 @@ if st.button("Ask", type="primary") and question.strip():
 
     st.subheader("Citations")
     for c in answer.citations:
-        st.write(
-            f"- **{c.source_doc}** :: `{c.chunk_id}` "
-            f"(score={c.similarity_score})"
-        )
+        st.write(f"- `{c.chunk_id}` (score={c.similarity_score})")
 
     st.subheader("Retrieved chunks")
     for cand in answer.candidates:
         tag = "+".join(sorted(cand.sources))
         with st.expander(
-            f"{cand.source_doc} :: {cand.chunk_id} | from={tag} "
-            f"| rerank={cand.rerank_score}"
+            f"{cand.chunk_id} | from={tag} | rerank={cand.rerank_score}"
         ):
             st.code(cand.text, language="markdown")
 

@@ -67,4 +67,4 @@ if __name__ == "__main__":
     print(answer.answer)
     print("\n=== Citations ===")
     for c in answer.citations:
-        print(f"  - {c.source_doc} :: {c.chunk_id} (score={c.similarity_score})")
+        print(f"  - {c.chunk_id} (score={c.similarity_score})")
