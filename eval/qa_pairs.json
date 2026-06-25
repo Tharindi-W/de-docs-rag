@@ -1,0 +1,54 @@
+[
+  {
+    "question": "What is Snowflake automatic clustering and when should I define a clustering key?",
+    "expected_docs": ["snowflake_clustering.md"]
+  },
+  {
+    "question": "How does multi-cluster warehouse scaling work in Snowflake and what are the two scaling policies?",
+    "expected_docs": ["snowflake_warehouses.md"]
+  },
+  {
+    "question": "How long can I keep Time Travel data in Snowflake Enterprise and what is Fail-safe?",
+    "expected_docs": ["snowflake_time_travel.md"]
+  },
+  {
+    "question": "What is the difference between logical date and wall-clock time for an Airflow DAG run?",
+    "expected_docs": ["airflow_dag_basics.md"]
+  },
+  {
+    "question": "When should I use a custom XCom backend in Airflow instead of the default metadata DB backend?",
+    "expected_docs": ["airflow_xcom.md"]
+  },
+  {
+    "question": "When is the KubernetesExecutor a better fit than the CeleryExecutor for Airflow?",
+    "expected_docs": ["airflow_executors.md"]
+  },
+  {
+    "question": "What are AWS Glue job bookmarks and when should I reset them?",
+    "expected_docs": ["glue_jobs.md"]
+  },
+  {
+    "question": "What does the UPDATE_IN_DATABASE schema change policy do for an AWS Glue crawler?",
+    "expected_docs": ["glue_crawlers.md"]
+  },
+  {
+    "question": "What is partition projection in Athena and when is it useful?",
+    "expected_docs": ["glue_data_catalog.md"]
+  },
+  {
+    "question": "How do I undrop a table in Snowflake after an accidental DROP?",
+    "expected_docs": ["snowflake_time_travel.md"]
+  },
+  {
+    "question": "What does AUTO_SUSPEND control on a Snowflake virtual warehouse and what is a good default for dashboards?",
+    "expected_docs": ["snowflake_warehouses.md"]
+  },
+  {
+    "question": "What is the TaskFlow API in Airflow and how does it handle dependencies?",
+    "expected_docs": ["airflow_dag_basics.md"]
+  },
+  {
+    "question": "What is a DPU in AWS Glue and how does worker size affect cost?",
+    "expected_docs": ["glue_jobs.md"]
+  }
+]
